@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  json-presenter:
+    container_name: json-presenter
+    build:
+      .
+    ports:
+      - 8888:8888
+    environment:
+      JAVA_OPTS: $JAVA_OPTS
+    volumes:
+    - /opt/json-presenter:/opt/json-presenter/json
+    restart: on-failure

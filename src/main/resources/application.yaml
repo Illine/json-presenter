@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: json-presenter
+
+server:
+  port: 8888
+
+presenter:
+  json-dir: json/
+  json-path: ${presenter.json-dir}/loaded.json
